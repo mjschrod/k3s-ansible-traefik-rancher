@@ -4,6 +4,8 @@
 
 BIG SHOUTOUT TO [TechnoTim](https://github.com/timothystewart6) who made this possible and inspired me be sure to check him out!
 
+And Thank you from me to [ChrisThePCGeek](https://github.com/ChrisThePCGeek)
+
 ## Instructions/notes
 
 Here: <https://thepcgeek.net/posts/ansible-to-k3s-rancher/>
@@ -13,8 +15,11 @@ Here: <https://thepcgeek.net/posts/ansible-to-k3s-rancher/>
 Build a k3s Kubernetes cluster using Ansible. The goal is easily install a highly available Kubernetes cluster with Traefik and Rancher on machines running:
 
 - [X] Debian
-- [X] Ubuntu
+- [X] Ubuntu 
 - [X] CentOS
+
+> [!NOTE]
+> Tested: Didn't work with Noble Numbat (24.04), but Jammy Jellyfisch (22.04) works fine.
 
 on processor architecture:
 
@@ -22,9 +27,10 @@ on processor architecture:
 - [X] arm64
 - [X] armhf
 
-**Additional info for Raspberrys:** 
-**Currently, the script only works for the Debian releases Buster and Bullseye.** 
-**Bookworm is not implemented yet.**
+> [!NOTE]
+> Additional info for Raspberrys:
+> Currently, the script only works for the Debian releases Buster and Bullseye.
+> Bookworm is not implemented yet.
 
 ## System requirements
 
