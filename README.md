@@ -22,6 +22,10 @@ on processor architecture:
 - [X] arm64
 - [X] armhf
 
+**Additional info for Raspberrys:** 
+**Currently, the script only works for the Debian releases Buster and Bullseye.** 
+**Bookworm is not implemented yet.**
+
 ## System requirements
 
 Deployment environment must have Ansible 2.4.0+
