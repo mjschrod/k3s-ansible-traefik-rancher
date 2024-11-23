@@ -37,6 +37,16 @@ on processor architecture:
 Deployment environment must have Ansible 2.4.0+
 Master and nodes must have passwordless SSH access
 
+#### Control Node (the machine you are running ansible commands) must have Ansible 2.11+ If you need a quick primer on Ansible you can check out my docs and setting up Ansible.
+
+#### You will also need to install collections that this playbook uses by running ansible-galaxy collection install -r ./collections/requirements.yml (important❗)
+
+#### netaddr package must be available to Ansible. If you have installed Ansible via apt, this is already taken care of. If you have installed Ansible via pip, make sure to install netaddr into the respective virtual environment.
+
+#### server and agent nodes should have passwordless SSH access, if not you can supply arguments to provide credentials --ask-pass --ask-become-pass to each command.
+
+
+
 ## Usage
 
 First create a new directory based on the `sample` directory within the `inventory` directory:
